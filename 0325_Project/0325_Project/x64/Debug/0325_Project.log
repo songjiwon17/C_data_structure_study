@@ -1,0 +1,5 @@
+﻿  0325_project.cpp
+C:\Users\tmddn\2025학년도_1학기\객체지향언어1\0325_Project\0325_Project\0325_project.cpp(74,5): error C2084: 'int main(void)' 함수에 이미 본문이 있습니다.
+      C:\Users\tmddn\2025학년도_1학기\객체지향언어1\0325_Project\0325_Project\0325_project.cpp(58,5):
+      'main'의 이전 정의를 참조하십시오.
+  
