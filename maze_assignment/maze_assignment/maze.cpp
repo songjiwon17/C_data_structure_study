@@ -5,8 +5,8 @@
 
 //스택을 이용하여 미로탐색 프로그램 만들기
 //조건
-//(1)미로를 랜덤으로 생성
-//(2)탈출과정의 위치와 경로를 출력
+//1. (1)미로를 랜덤으로 생성
+//2. (1)탈출과정의 위치와 경로를 출력
 
 #define MAX_STACK_SIZE 20
 #define MAZE_SIZE 6 //미로의 크기를 6x6으로 지정
@@ -65,7 +65,7 @@ void maze_generate(char maze[MAZE_SIZE][MAZE_SIZE]) {
 	for (int i = 0; i < MAZE_SIZE; i++) { // 6x6을 만들기 위한 for문
 		for (int j = 0; j < MAZE_SIZE; j++) { //외곽 벽을 만들기 위한 for문 
 			//예) 3x3을 만들 때 
-			// (0,0), (0,1) (0,2)이 외곽 벽이어야하고
+			// (0,0), (0,1) (0,2)이 외곽 벽
 			// (2,0), (2,1), (2,2)이 외곽 벽
 			// (0,0), (1,0), (2,0)이 외곽 벽
 			// (0,2), (1,2), (2,2)이 외곽 벽이 되어야 함
@@ -89,19 +89,64 @@ void maze_print(char maze[MAZE_SIZE][MAZE_SIZE]) {
 	}
 }
 
-//
-//void push_loc(StackType* s, int r, int c) {
-//	if (r < 0 || c < 0) return;
-//	if (maze[r][c] != '1' && maze[r][c] != '.') {
-//		element tmp;
-//		tmp.r = r;
-//		tmp.c = c;
-//		push(s, tmp);
-//	}
-//}
+//주변 위치를 검사하고 스택에 넣는 함수
+void push_loc(StackType* s, char maze[MAZE_SIZE][MAZE_SIZE], int r, int c) {
+	if (r < 0 || r >= MAZE_SIZE || c < 0 || c >= MAZE_SIZE) return;
+	if (maze[r][c] == '0' || maze[r][c] == 'x') {
+		element tmp = { r,c };
+		push(s, tmp);
+	}
+}
+
+//스택에 쌓인 값들 출력하는 함수
+void stack_print(StackType* s) {
+	printf("현재 스택 상태:\n");
+	for (int i = s->top; i >= 0; i--) {
+		printf("(%d, %d)\n", s->data[i].r, s->data[i].c);
+	}
+	printf("\n");
+}
+
+//미로를 탐색하는 함수
+int solve_maze(char maze[MAZE_SIZE][MAZE_SIZE]) {
+	StackType s;
+	init_stack(&s);
+	element start = { 1,2 }; //시작 위치 'e'
+	push(&s, start);
+
+	while (!is_empty(&s)) {
+		element pos = pop(&s); //위치를 꺼내서 pos에 저장, 지금 탐색 중인 위치를 꺼냄
+		int r = pos.r;
+		int c = pos.c;
+
+		printf("현재 위치: (%d, %d)\n", r, c); //탐색 경로 출력
+
+		if (maze[r][c] == 'x') { //현재 위치가 'x'라면 미로 탈출 성공
+			printf("\n미로 탈출 성공!\n\n");
+			return 1; //return 1로 성공이므로 프로그램 종료
+		}
+
+		if (maze[r][c] != 'e') {
+			maze[r][c] = '.'; //탐색한 경로 표시
+		}
+
+		push_loc(&s, maze, r-1, c); //현재 위치의 위 확인
+		push_loc(&s, maze, r + 1, c); //현재 위치의 아래 확인
+		push_loc(&s, maze, r, c - 1); //현재 위치의 왼쪽 확인
+		push_loc(&s, maze, r, c + 1); //현재 위치의 오른쪽 확인
+
+		stack_print(&s);
+	}
+	printf("\n탈출 불가능 미로!\n\n");
+	return 0;
+}
 
 int main() {
 	char maze[MAZE_SIZE][MAZE_SIZE];
+	printf("==생성된 미로==\n");
 	maze_generate(maze);
+	maze_print(maze);
+	solve_maze(maze);
+	printf("==탐색한 경로==\n");
 	maze_print(maze);
 }
