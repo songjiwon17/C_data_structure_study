@@ -35,7 +35,7 @@ int is_empty(QueueType* q) {
 void enqueue(QueueType *q, element item) { //q의 주소값 1000
 	//overflow check
 	if (is_full(q)) {
-		fprintf(stderr, "스택오버플로우");
+		fprintf(stderr, "큐가 꽉 차있음\n");
 		return;
 	}
 	else /*q->data[++(q->rear)] = item;*/ //선형 큐

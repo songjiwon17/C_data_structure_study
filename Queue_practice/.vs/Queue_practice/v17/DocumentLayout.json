@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\tmddn\\2025\uD559\uB144\uB3C4_1\uD559\uAE30\\\uC790\uB8CC\uAD6C\uC870\\Queue_practice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EE7E14D-4DDC-4656-A924-12B931576CFC}|Queue_practice\\Queue_practice.vcxproj|C:\\Users\\tmddn\\2025\uD559\uB144\uB3C4_1\uD559\uAE30\\\uC790\uB8CC\uAD6C\uC870\\Queue_practice\\Queue_practice\\queue_practice1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3EE7E14D-4DDC-4656-A924-12B931576CFC}|Queue_practice\\Queue_practice.vcxproj|solutionrelative:Queue_practice\\queue_practice1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3935F6F6-0697-4AA3-8929-CA9D5D3A5D1E}|Queue_practice2\\Queue_practice2.vcxproj|C:\\Users\\tmddn\\2025\uD559\uB144\uB3C4_1\uD559\uAE30\\\uC790\uB8CC\uAD6C\uC870\\Queue_practice\\Queue_practice2\\queue_practice2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3935F6F6-0697-4AA3-8929-CA9D5D3A5D1E}|Queue_practice2\\Queue_practice2.vcxproj|solutionrelative:Queue_practice2\\queue_practice2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "queue_practice1.cpp",
-              "DocumentMoniker": "C:\\Users\\tmddn\\2025\uD559\uB144\uB3C4_1\uD559\uAE30\\\uC790\uB8CC\uAD6C\uC870\\Queue_practice\\Queue_practice\\queue_practice1.cpp",
-              "RelativeDocumentMoniker": "Queue_practice\\queue_practice1.cpp",
-              "ToolTip": "C:\\Users\\tmddn\\2025\uD559\uB144\uB3C4_1\uD559\uAE30\\\uC790\uB8CC\uAD6C\uC870\\Queue_practice\\Queue_practice\\queue_practice1.cpp",
-              "RelativeToolTip": "Queue_practice\\queue_practice1.cpp",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwEMAAAABAAAAAAAAAA==",
+              "Title": "queue_practice2.cpp",
+              "DocumentMoniker": "C:\\Users\\tmddn\\2025\uD559\uB144\uB3C4_1\uD559\uAE30\\\uC790\uB8CC\uAD6C\uC870\\Queue_practice\\Queue_practice2\\queue_practice2.cpp",
+              "RelativeDocumentMoniker": "Queue_practice2\\queue_practice2.cpp",
+              "ToolTip": "C:\\Users\\tmddn\\2025\uD559\uB144\uB3C4_1\uD559\uAE30\\\uC790\uB8CC\uAD6C\uC870\\Queue_practice\\Queue_practice2\\queue_practice2.cpp",
+              "RelativeToolTip": "Queue_practice2\\queue_practice2.cpp",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAYwFwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-11T08:05:50.659Z",
+              "WhenOpened": "2025-04-11T09:12:09.231Z",
               "EditorCaption": ""
             }
           ]
