@@ -1,5 +1,0 @@
-﻿  maze.cpp
-C:\Users\tmddn\2025학년도_1학기\자료구조\maze_assignment\maze_assignment\maze.cpp(63,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\tmddn\2025학년도_1학기\자료구조\maze_assignment\maze_assignment\maze.cpp(96,19): warning C4838: 'int'에서 'short'(으)로의 변환에는 축소 변환이 필요합니다.
-C:\Users\tmddn\2025학년도_1학기\자료구조\maze_assignment\maze_assignment\maze.cpp(96,21): warning C4838: 'int'에서 'short'(으)로의 변환에는 축소 변환이 필요합니다.
-  maze_assignment.vcxproj -> C:\Users\tmddn\2025학년도_1학기\자료구조\maze_assignment\x64\Debug\maze_assignment.exe

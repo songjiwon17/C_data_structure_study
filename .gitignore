@@ -1,0 +1,43 @@
+# 🔒 Visual Studio 폴더 및 설정 파일 무시
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.cache
+*.ncb
+*.db
+
+# 🔨 빌드 관련 출력 파일 무시
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.log
+*.idb
+*.tlog
+*.ipch
+*.aps
+*.pch
+*.manifest
+
+# 🧱 빌드 폴더 무시
+Debug/
+Release/
+x64/
+x86/
+
+# 🔧 기타 자주 무시되는 항목
+*.opensdf
+*.sdf
+*.tmp
+
+# ✅ 명시적으로 추적할 파일 형식 (선택 사항)
+# 아래는 의도적으로 포함시키려는 확장자를 명시적으로 쓰는 경우입니다.
+# Git은 기본적으로 .gitignore에 없으면 추적하므로 없어도 됩니다.
+!*.cpp
+!*.h
