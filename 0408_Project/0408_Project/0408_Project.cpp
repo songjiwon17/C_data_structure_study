@@ -19,7 +19,6 @@ void init_queue(QueueType *q) {
 	/*q->front = -1;*/ // 선형 큐
 	/*q->rear = -1;*/ // 선형 큐
 	q->front = q->rear = 0; //원형 큐
-
 }
 
 int is_full(QueueType *q) { //q의 주소값 1000
@@ -40,6 +39,8 @@ void enqueue(QueueType *q, element item) { //q의 주소값 1000
 	}
 	else /*q->data[++(q->rear)] = item;*/ //선형 큐
 	q->data[(++(q->rear)) % MAX_QUEUE_SIZE] = item; //원형 큐
+	//q->rear = (q->rear + 1) % MAX_QUEUE_SIZE;
+	//q->data[a->rear] = item;
 }
 
 element dequeue(QueueType* q) {
